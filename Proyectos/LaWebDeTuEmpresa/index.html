@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagenes/logoempresa.png" type="">
+    <title>ValenciaCoches.net</title>
+</head>
+
+<body>
+
+    <h1>ValenciaCoches.net</h1>
+    <a href="https://www.coches.net/" target="_blank">Visita la tienda</a>
+
+    <p></p>
+
+    <img src="imagenes/logoempresa.png" alt="Logo de ValenciaCoches.net" title="ValenciaCoches.net" width="250">
+
+    <section id="contacto">
+
+        <form>
+            <fieldset>
+                <legend>Datos de contacto</legend>
+
+                <label>Nombre completo:
+                    <input type="text" placeholder="Escribe tu nombre completo" required>
+                    </label>
+                    <p></p>
+
+                <label>Email:
+                    <input type="email" placeholder="Escribe tu email">
+                    </label>
+                    <p></p>
+
+                <label>Telefono: 
+                    <input type="tel" placeholder="Escribe tu teléfono">
+                </label>
+                <p></p>
+
+                <label>Fecha de nacimiento:</label>
+                    <input type="date">
+
+            </fieldset>
+
+            <p></p>
+
+            <fieldset>
+                <legend>Elige el coche que quieres probar</legend>
+                
+                <input type="radio" name="tipoCoche" value="fiat500">
+                <label>Fiat 500</label>
+
+                <input type="radio" name="tipoCoche" value="seatLeon">
+                <label>Seat Leon</label>
+
+                <input type="radio" name="tipoCoche" value="fordFocus">
+                <label>Ford Focus</label>
+
+            </fieldset>
+            <p></p>
+
+            <fieldset>
+                <legend>Extras</legend>
+
+                <input type="checkbox" name="extras" value="gasolina">
+                <label>Depósito lleno</label>
+
+                <input type="checkbox" name="extras" value="seguroTodoRiesgo">
+                <label>Seguro a todo riesgo</label>
+
+                <input type="checkbox" name="extras" value="descapotable">
+                <label>Descapotable</label>
+
+            </fieldset>
+            <p></p>
+
+            <fieldset>
+                <legend>Color</legend>
+
+                <label>Elige el colot que quieres:</label>
+                <select name="colores">
+                    <option value="rojo">Rojo</option>
+                    <option value="negro">Negro</option>
+                    <option value="gris metalizado">Gris metalizado</option>
+                    <option value="rosa">Rosa</option>
+
+                </select>
+            </fieldset>
+            <p></p>
+
+            <fieldset>
+                <legend>Dudas</legend>
+                <textarea placeholder="Escribe aquí tus dudas"></textarea>
+            </fieldset>
+            <p></p>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+    </section>
+
+</body>
+</html>
