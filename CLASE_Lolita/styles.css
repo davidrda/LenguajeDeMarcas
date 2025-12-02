@@ -1,56 +1,103 @@
+/* Selector universal: aplica a *todos* los elementos */
 * {
-    margin: 0px;
-    box-sizing: border-box;
+    margin: 0;                 /* Elimina los márgenes por defecto */
+    box-sizing: border-box;    /* Incluye el padding y el borde dentro del ancho/alto total */
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: azure;
-    color: #333;
-    padding: 20px;
+/* Estilos generales del cuerpo de la página */
+body{
+    font-family: Arial, Helvetica, sans-serif;  /* Fuente principal del documento */
+    line-height: 1.6;                           /* Altura de línea para mejorar la lectura */
+    background-color: azure;                    /* Color suave de fondo */
+    color: #333;                                /* Color principal del texto */
+    padding: 20px;                              /* Separación interna alrededor del contenido */
 }
 
+/* Estilo del encabezado principal */
 header {
-    text-align: center;
-    background-color: white;
-    border-radius: 20px;
-    border: 1px solid #333;
+    text-align: center;         /* Centra el texto dentro del header */
+    background-color: #ffffff;  /* Fondo blanco */
+    border-radius: 10px;        /* Bordes redondeados */
+    border: 2px solid #333;     /* Borde oscuro de 2px */
 }
 
+/* Clase general para botones */
 .btn {
-padding: 30px 40px;
-margin: 20px;
-border-radius: 6px;
-
+    padding: 20px 25px;   /* Tamaño del botón (vertical y horizontal) */
+    margin-top: 20px;     /* Separación superior respecto a otros elementos */
+    border-radius: 5px;   /* Esquinas levemente redondeadas */
+    cursor: pointer;      /* Cambia el cursor a mano al pasar por encima */
+    transition: background-color  0.3s ease;
 }
 
 /* FORMULARIO */
 
+/* Contenedor principal del formulario */
 .contacto {
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    border: 0.1px solid;
+    padding: 20px;          /* Espaciado interno */
+    background: #ffffff;    /* Fondo blanco */
+    border-radius: 10px;    /* Bordes redondeados */
 }
 
+.contacto .trozo {
+    color: blue;
+}
+
+/* Margen inferior entre los distintos campos del formulario */
 .form .campo {
-    margin-bottom: 10px;
-    background-color: red;
+    margin-bottom: 15px;
 }
 
+.form .campo span {
+    display: block; /* El elemento va a ocupar un solo cajón */
+    font-weight: bold; /* Se pone en negrita */
+    margin-bottom: 3px;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(10, 113, 136);
+    font-size: 1.2rem;
+
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form input:hover,
+.form textarea:hover {
+    border: 3px solid red;
+}
+
+.form input:focus,
+.form textarea:focus {
+    border-color: red;
+    outline: none;
+    box-shadow: -2px -2px 5px orange;
+}
+
+
+/* Botón para enviar */
 .btn-enviar {
-
-background-color: cadetblue;
-color: white;
+    background-color: cadetblue; /* Color de fondo */
+    color: white;                /* Texto en blanco */
 }
 
+/* Botón para borrar o resetear */
 .btn-borrar {
-    background-color: red;
-color: white;
+    background-color: red; /* Fondo rojo */
+    color: #ffffff;        /* Texto blanco */
 }
 
+/* Efecto hover para el botón de enviar */
 .btn-enviar:hover {
-    background-color: yellow;
-    color: black;
+    background-color: blueviolet; /* Cambia a amarillo al pasar el ratón */
+    transform: scale(1.05);
+}
+
+/* Efecto hover para el botón de borrar */
+.btn-borrar:hover {
+    background-color: grey;
+    transform: scale(1.05);
 }
