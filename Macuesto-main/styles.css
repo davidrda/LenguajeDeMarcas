@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: azure;
+    color: #333;
+    padding: 10px;
+}
+
+header {
+    text-align: center;
+    background-color: white;
+    border: solid 2px;
+    border-radius: 10px;
+    border-color: black;
+    padding: 10px;
+}
+
+.contacto {
+    background-color: white;     /* Fondo blanco */
+    border-radius: 10px;         /* Bordes redondeados */
+    padding: 20px;               /* Espacio interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 400px;            /* Ancho máximo */
+    margin: 40px auto;           /* Centrado con margen arriba/abajo */
+}
+
+.trozo {
+    color: blue;
+    font-weight: bold;
+}
+
+.campo {
+    margin-bottom: 16px;
+}
+
+.campo span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 10px;                   /* espacio interno */
+    border: 1px solid #ccc;          /* borde gris claro */
+    border-radius: 5px;              /* bordes redondeados */
+    box-sizing: border-box;          /* incluye el padding en el 100% */
+    transition: border-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.campo input:hover,
+.campo textarea:hover {
+    border: 3px solid red;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    border-color: red;
+    outline: none;
+    box-shadow: -2px -2px 5px orange;
+}
+
+.btn {
+    padding: 15px;
+    border: solid 1px gray;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 1s ease, transform 0.3s ease;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    color: white;
+}
+
+.btn-enviar{
+    background-color: cadetblue;
+}
+
+.btn-borrar{
+    background-color: red;
+
+}
+
+.btn-enviar:hover,
+.btn-borrar:hover{
+    background-color: gray;
+    transform: scale(1.05);
+}
