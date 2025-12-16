@@ -50,7 +50,6 @@ header {
     padding: 10px;                   /* espacio interno */
     border: 1px solid #ccc;          /* borde gris claro */
     border-radius: 5px;              /* bordes redondeados */
-    box-sizing: border-box;          /* incluye el padding en el 100% */
     transition: border-color 0.5s ease, box-shadow 0.5s ease;
 }
 

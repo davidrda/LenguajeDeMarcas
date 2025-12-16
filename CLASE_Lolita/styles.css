@@ -1,3 +1,13 @@
+:root {
+   --color-principal: #1D3535;
+   --color-secundario: #4545CC;
+   --border-radius: 10px;
+
+}
+
+
+
+
 /* 
    SELECTOR UNIVERSAL
    -------------------
@@ -70,7 +80,7 @@ body{
        En lugar de un negro puro (#000), se usa #333 (gris muy oscuro),
        que suele cansar menos la vista.
     */
-    color: #333;                                
+    color: var(--color-principal);                                
 
     /*
        padding: 20px
@@ -79,7 +89,7 @@ body{
        Hace que el contenido no esté pegado a los bordes de la ventana,
        dejando un margen visual agradable.
     */
-    padding: 20px;                              
+    padding-top: 300px;                              
 }
 
 /* 
@@ -108,7 +118,7 @@ header {
        Bordes redondeados en el contenedor header.
        Cuanto mayor el valor, más redondo es el borde.
     */
-    border-radius: 10px;        
+    border-radius: var(--border-radius);        
 
     /*
        border: 2px solid #333
@@ -116,9 +126,20 @@ header {
        Borde de 2 píxeles, línea continua, color gris oscuro.
        Enmarca visualmente el header, dándole aspecto de tarjeta.
     */
-    border: 2px solid #333;     
+    border: 2px solid #333;    
+    
+    margin-bottom: 20px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
+.layout {
+
+   margin-top: 20px;
+}
 /*
    CLASE GENERAL PARA BOTONES .btn
    -------------------------------
@@ -149,7 +170,7 @@ header {
        -------------------
        Esquinas ligeramente redondeadas para un aspecto más moderno y suave.
     */
-    border-radius: 5px;   
+    border-radius: var(--border-radius);   
 
     /*
        cursor: pointer
@@ -194,6 +215,8 @@ header {
    <div class="contacto"> ... </div>
 */
 .contacto {
+
+   clear: both;
     /*
        padding: 20px
        -------------
@@ -208,7 +231,7 @@ header {
        Fondo blanco, creando contraste con el fondo azure del body.
        Esto hace que el formulario parezca una "tarjeta" sobre el fondo.
     */
-    background: #ffffff;    
+    background: #9794f4;    
 
     /*
        border-radius: 10px
@@ -216,7 +239,7 @@ header {
        Bordes redondeados en el contenedor del formulario.
        Visualmente uniforme con el header (que también tiene 10px).
     */
-    border-radius: 10px;    
+    border-radius: var(--border-radius);    
 }
 
 /*
@@ -477,4 +500,53 @@ header {
 .btn-borrar:hover {
     background-color: grey;  /* Cambia el fondo a gris al pasar el ratón */
     transform: scale(1.05);  /* Efecto de "zoom" suave */
+}
+
+.layout {
+
+   width: 90%;
+
+   max-width: 1200px;
+
+   margin: auto auto;
+}
+
+.content {
+
+   width: 65%;
+   float: left;
+   background-color: #fff;
+   border: 1px solid #333;
+   border-radius: var(--border-radius);
+   padding: 20px;
+   margin-bottom: 20px;
+}
+
+.sidebar {
+
+   width: 30%;
+   float: right;
+
+   background-color: #fff;
+   border: 1px solid #333;
+   border-radius: var(--border-radius);
+   padding: 20px;
+   margin-bottom: 20px;
+}
+
+@media(max-width: 768px) {
+
+   .body {
+      padding-top: 50px;
+   }
+
+   .logo{
+      width: 120px;
+   }
+
+   .content,
+   .sidebar {
+      width: 100%;
+      float: none;
+   }
 }
